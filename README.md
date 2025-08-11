@@ -13,7 +13,7 @@
 
 ## 📦 Установка
 ```bash
-git clone https://github.com/<username>/erp-backend.git
-cd erp-backend
+git clone https://github.com/LBennettBuild/ion-server.git
+cd erp-server
 pip install -r requirements.txt
 python manage.py runserver
