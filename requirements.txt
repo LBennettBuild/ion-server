@@ -1,0 +1,11 @@
+asgiref==3.9.1
+dataclasses==0.6
+Django==5.2.5
+djangorestframework==3.16.1
+djongo==1.2.31
+dnspython==2.7.0
+pillow==11.3.0
+pymongo==4.14.0
+sqlparse==0.5.3
+typing_extensions==4.14.1
+tzdata==2025.2
