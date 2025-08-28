@@ -17,10 +17,14 @@ Including another URLconf
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from ion_server import settings
+from django.conf import settings
+from server.routes import api_router
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('server.urls')),
+    path('api/v1/', api_router.urls)
 ]
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

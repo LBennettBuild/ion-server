@@ -134,3 +134,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JWT_ALG = "RS256"
+JWT_ACCESS_TTL = 900
+JWT_REFRESH_TTL = 60*60*24*30
+with open(BASE_DIR / "ion_server" / "keys" / "jwt_private.pem") as f:
+    JWT_PRIVATE_KEY = f.read()
+
+with open(BASE_DIR / "ion_server" / "keys" / "jwt_public.pem") as f:
+    JWT_PUBLIC_KEY = f.read()
